@@ -3,8 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>smt</title>
+		<title>SMT</title>
 		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
@@ -20,9 +21,9 @@
 		</svg>
 		<main class="site-wrapper">
 			<div class="content content--fixed">
-				<header class="codrops-header">
+				<!-- <header class="codrops-header">
 					<h1 class="codrops-header__title">Stephen Mark Toms</h1>
-				</header>
+				</header> -->
 				<nav class="demos">
 					
 					  <a href="#" onclick="updatePage('about'); return false;">ABOUT</a>
@@ -30,29 +31,35 @@
 
 				</nav>
 			</div>
+
+
+
 			<div class="content">
+
+				<div class="content-wrapper centered">
+					<h3 class="slide-item__title">Stephen Mark Toms</h3>
+				</div>
+
 				<div class="slide-wrapper">
 					<div class="slide-item">
 						<img src="img/8.jpg" class="slide-item__image">
-						<h3 class="slide-item__title"></h3>
 					</div>
 					<div class="slide-item">
 						<img src="img/7.jpg" class="slide-item__image">
-						<h3 class="slide-item__title"></h3>
 					</div>
 					<div class="slide-item">
 						<img src="img/9.jpg" class="slide-item__image">
-						<h3 class="slide-item__title"></h3>
 					</div>				
 				</div>
 				<button class="scene-nav scene-nav--prev" data-nav="previous" ><svg class="icon icon--arrow-nav-prev"><use xlink:href="#icon-arrow-nav"></use></svg></button>
 				<button class="scene-nav scene-nav--next" id="navItem" data-nav="next" ><svg class="icon icon--arrow-nav-next"><use xlink:href="#icon-arrow-nav"></use></svg></button>				
 			</div>
 		</main>
+
 		<script src="js/demo.js"></script>
 		<script src="js/pixi.min.js"></script>
 		<script src="js/TweenMax.min.js"></script>
-		<script src="js/main3.js"></script>
+		<script src="js/slider.js"></script>
 		<script src="js/imagesloaded.pkgd.min.js"></script>
 
 		<script
@@ -78,7 +85,8 @@
 
 					console.log("index is 0");
 					initCanvasSlideshow.moveSlider( 0 );
-					TweenMax.to(".codrops-header__title", 1, { delay: .5, y:"+=100", alpha: 1});
+					//TweenMax.to(".codrops-header__title", 1, { delay: .5, y:"+=100", alpha: 1});
+					$(".content-wrapper h3").css("color:black");
 
 					break;
 
@@ -87,8 +95,8 @@
 					console.log("run about page");
 					initCanvasSlideshow.moveSlider( 1 );
 
-					TweenMax.to(".codrops-header__title", 1, { delay: .5, y:"-=100", alpha: 0});
-
+					// TweenMax.to(".codrops-header__title", 1, { delay: .5, y:"-=100", alpha: 0});
+					$(".content-wrapper h3").css("color:white");
 
 					break;
 

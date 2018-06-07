@@ -203,11 +203,11 @@ main {
 }
 
 .codrops-header__title {
-	font-size: 1em;
-	font-weight: bold;
+	font-size: 3.125em;
+	font-weight: lighter;
 	margin: 0;
 	padding: 0.75em 0;
-	text-shadow: 4px 2px 20px #000000;
+	color: black;
 }
 
 .info {
@@ -281,6 +281,26 @@ a.demo--current {
 	z-index: 1;
 }
 
+body{
+
+
+
+		font-family: "Garamond", serif;
+
+}
+
+.content-wrapper h3{
+  position: fixed; /* or absolute */
+  top: 20%;
+  left: 38%;
+  text-align: center;
+  z-index: 1000;
+  font-size: 3.125em;
+  color:black;
+  font-weight: lighter;
+}
+
+
 @media screen and (min-width: 55em) {
 	.demos {
 		display: flex;
@@ -324,9 +344,10 @@ a.demo--current {
 		align-items: center;
 	}
 	.codrops-header__title {
-		font-weight: bold;
+		font-weight: lighter;
 		padding-bottom: 0.25em;
 		text-align: center;
+
 	}
 	.github {
 		display: block;
